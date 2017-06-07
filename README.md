@@ -42,9 +42,9 @@ apt-get install docker-ce
 docker --version
 ```
 
-##Comandos básicos Docker
+## Comandos básicos Docker
 
-###Containers
+### Containers
 Listar los containers en ejecución
 ```
 docker ps
@@ -85,7 +85,7 @@ Crear el contenedor a partir de una imagen e iniciarlo
 docker run [opciones] imagen:version_imagen
 ```
 
-###Imágenes
+### Imágenes
 Listar las imágenes disponibles para crear contenedores
 ```
 docker images
