@@ -41,3 +41,57 @@ apt-get install docker-ce
 ```
 docker --version
 ```
+
+##Comandos básicos Docker
+
+###Containers
+Listar los containers en ejecución
+```
+docker ps
+```
+
+Listar todos los containers ejecutándose y terminados
+```
+docker ps -a
+```
+
+Mostrar uso de cpu, memoria, etc. de los containers en ejecución
+```
+docker stats --all
+```
+
+Ejecutar una shell en mycontainer (para salir de la shell se usa comando: exit)
+```
+docker exec -it mycontainer /bin/sh
+```
+
+Borrar mycontainer
+```
+docker rm mycontainer
+```
+
+Iniciar un contenedor
+```
+docker start mycontainer
+```
+
+Terminar un contenedor
+```
+docker stop mycontainer
+```
+
+Crear el contenedor a partir de una imagen e iniciarlo
+```
+docker run [opciones] imagen:version_imagen
+```
+
+###Imágenes
+Listar las imágenes disponibles para crear contenedores
+```
+docker images
+```
+
+Borrar myimage de las imágenes
+```
+docker rmi myimage
+```
