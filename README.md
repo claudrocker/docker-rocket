@@ -1,8 +1,8 @@
 # docker-rocket
 Lista de comandos Docker más usados
 
-## Instalar docker
-Para debian jessie: https://docs.docker.com/engine/installation/linux/debian/
+## Instalar docker (debian jessie)
+Mas info en: https://docs.docker.com/engine/installation/linux/debian/
 
 1. Instalar packages
 ```
