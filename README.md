@@ -107,7 +107,7 @@ ej:
            IMAGEN:TAG 
 docker pull nginx:1.13-alpine
 
-### Ejemplos nginx proxy
+### Ejemplos nginx-proxy
 
 ```
 docker run -d \
