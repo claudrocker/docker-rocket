@@ -106,3 +106,30 @@ Ver en pestaña Tag distintas versiones (que tienen distintos tamaños)
 ej:
            IMAGEN:TAG 
 docker pull nginx:1.13-alpine
+
+### Ejemplos nginx proxy
+
+```
+docker run -d \
+  --name nginx-proxy \
+  -p 80:80 \
+  -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy:alpine
+```
+```
+docker run -d \
+  --name clientes.frontdev.info \
+  -v /var/www/clientes:/usr/share/nginx/html \
+  -e VIRTUAL_HOST=clientes.frontdev.info nginx:1.12-alpine
+```
+```
+docker run -d \
+  --name blog.frontdev.info \
+  -v /var/www/blog:/usr/share/nginx/html \
+  -e VIRTUAL_HOST=blog.frontdev.info nginx:1.12-alpine
+```
+```
+docker run -d \
+  --name www.frontdev.info \
+  -v /var/www/www:/usr/share/nginx/html \
+  -e VIRTUAL_HOST=www.frontdev.info nginx:1.12-alpine
+```
