@@ -95,3 +95,14 @@ Borrar myimage de las imágenes
 ```
 docker rmi myimage
 ```
+
+### Descargar imágenes
+
+https://hub.docker.com/
+
+Buscar imagen con el buscador
+Ver en pestaña Tag distintas versiones (que tienen distintos tamaños)
+
+ej:
+           IMAGEN:TAG 
+docker pull nginx:1.13-alpine
