@@ -1,4 +1,4 @@
-# docker-rocket
+# docker-tips
 Lista de comandos Docker más usados
 
 ## Instalar docker (debian jessie)
